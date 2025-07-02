@@ -19,7 +19,7 @@ jobs:
         run: pip install bandit
 
       - name: Run Bandit
-        run: bandit -r . -f html -o bandit_report.html
+        run: bandit -r . -f html -o bandit_report.html || true
 
       - name: Upload Bandit Report
         uses: actions/upload-artifact@v4

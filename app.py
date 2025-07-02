@@ -10,9 +10,9 @@ def insecure_pickle_load(filename):
         data = pickle.load(f)
     return data
 
-# def hardcoded_password():
-#     password = "SuperSecret123"
-#     print("La contraseña es:", password)
+def hardcoded_password():
+    password = "SuperSecret123"
+    print("La contraseña es:", password)
 
 def use_eval(data):
     print(eval(data))
